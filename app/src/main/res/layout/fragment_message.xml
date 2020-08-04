@@ -6,7 +6,7 @@
     tools:context=".ui.message.MessageFragment">
 
     <TextView
-        android:id="@+id/message_tv"
+        android:id="@+id/textViewMessage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true" />

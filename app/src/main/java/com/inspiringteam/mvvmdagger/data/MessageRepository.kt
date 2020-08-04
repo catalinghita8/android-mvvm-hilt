@@ -1,11 +1,15 @@
 package com.inspiringteam.mvvmdagger.data
 
-import com.inspiringteam.mvvmdagger.di.scopes.AppScoped
 import javax.inject.Inject
+import javax.inject.Singleton
 
 // Fake repository
-@AppScoped
-class MessageRepository @Inject constructor() {
+@Singleton
+class MessageRepository @Inject constructor(storage: ISharedStorage) {
     val data: String
-        get() = "Hello Coding Troops!"
+        get() {
+            val message =
+
+            return "Hello Coding Troops!"
+        }
 }

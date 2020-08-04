@@ -1,15 +1,17 @@
 package com.inspiringteam.mvvmdagger.ui.message
 
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.inspiringteam.mvvmdagger.R
 import com.inspiringteam.mvvmdagger.utils.ActivityUtils.addFragmentToActivity
-import dagger.android.support.DaggerAppCompatActivity
+import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
-class MessageActivity : DaggerAppCompatActivity() {
-    @JvmField
+@AndroidEntryPoint
+class MessageActivity : AppCompatActivity() {
+
     @Inject
-    var mInjectedFragment: MessageFragment? = null
+    lateinit var mInjectedFragment: MessageFragment
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,7 +21,7 @@ class MessageActivity : DaggerAppCompatActivity() {
         var fragment = supportFragmentManager.findFragmentById(R.id.contentFrame) as MessageFragment?
         if (fragment == null) {
             fragment = mInjectedFragment
-            addFragmentToActivity(supportFragmentManager, fragment!!, R.id.contentFrame)
+            addFragmentToActivity(supportFragmentManager, fragment, R.id.contentFrame)
         }
     }
 }
