@@ -34,4 +34,11 @@ ext {
     //Arch Components
     archComponent = '2.3.0-alpha06'
     archExtensionComponent = '2.2.0'
+
+    //Retrofit
+    gsonVersion = '2.8.2'
+    gsonConverterVersion = '2.3.0'
+    retrofitClientVersion = '2.5.0'
+    retrofitAdapterRxJavaVersion = '2.3.0'
+
 }

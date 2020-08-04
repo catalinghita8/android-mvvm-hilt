@@ -8,7 +8,6 @@ import dagger.hilt.InstallIn
 import dagger.hilt.android.components.ApplicationComponent
 
 @InstallIn(ApplicationComponent::class)
-// Tells Dagger this is a Dagger module
 @Module
 abstract class SharedStorageModule {
 
