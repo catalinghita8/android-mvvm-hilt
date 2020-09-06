@@ -9,7 +9,8 @@ import javax.inject.Singleton
 
 // Fake repository
 @Singleton
-class MessageRepository @Inject constructor(private val storage: ISharedStorage, private val networkProvider: Retrofit) {
+class MessageRepository @Inject constructor(private val storage: ISharedStorage,
+                                            private val networkProvider: Retrofit) {
 
     val data: String
         get() {

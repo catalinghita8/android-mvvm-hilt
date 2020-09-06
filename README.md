@@ -1,3 +1,3 @@
-# Android-MVVM-Dagger2
+# Android-mvvm-hilt
 
-This repository acts as reference to the Medium Article [Improving testability in Android MVVM with Dagger 2](https://medium.com/@catalinghita8/improving-testability-in-android-mvvm-with-dagger-2-aa961098bad5).
+This repository acts as reference to the Coding Troops Article [Basic dependency Injection with Hilt](https://codingtroops.com/android/basic-dependency-injection-with-hilt/).
